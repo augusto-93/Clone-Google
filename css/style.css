@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, input, button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items:center; 
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu-section.left .menu-icon {
+    padding: 12px 16px;
+}
+
+.menu-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+    padding: 12px 8px;
+}
+
+.menu-link.active {
+    color: rgb(46, 46, 185);
+    border-bottom: 2px solid rgb(59, 59, 250);
+}
+
+.menu-link:not(.active) {
+    margin-bottom: 2px;
+}
+
+.menu-section.right {
+    margin-right: 4px;
+}
+
+.menu-section.right .menu-icon {
+    padding: 12px;
+}
+
+.menu-profile {
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.menu-avatar-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* Logo */
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 150px 8px 0;
+    align-items: center;
+}
+
+.content-logo {
+    width: 100%;
+    max-width: 300px;
+}
+
+.content-search {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 730px;
+    padding: 7px 10px 7px 20px;
+    font-size: 18px;
+    color: #000;
+    background: transparent;
+    border-radius: 25px;
+    border: 2px solid rgb(223, 223, 223);
+}
+
+.content-offer {
+    margin-top: 24px;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.content-offer a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(238, 238, 238);
+}
+
+.footer-section:not(:first-child) {
+    border-top: 1px solid rgb(223, 223, 223);
+}
+
+.footer-location {
+    font-size: 15px;
+    color: rgb(82, 82, 82);
+    padding: 10px 12px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(82, 82, 82);
+    padding: 10px;
+}
+
+.footer-links a:not(:first-child) {
+    margin-left: 30px;
+
+}
